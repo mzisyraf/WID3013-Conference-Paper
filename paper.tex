@@ -23,7 +23,7 @@
 % Abstract Section
 \maketitle
 \begin{abstract}
-    Your abstract text goes here. It should be 100-150 words and summarize the paper's content.
+    Your abstract text goes here. It should be 100-150 words and summarize the paper's content \cite{smith2020}.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -31,14 +31,14 @@
 \end{IEEEkeywords}
 
 % Include sections from separate files
-\input{introduction}
-\input{related_work}
-\input{methodology}
-\input{experiments_results}
-\input{conclusion}
+\input{content/introduction}
+\input{content/related_work}
+\input{content/methodology}
+\input{content/experiment_results}
+\input{content/conclusion}
 
 % References Section
 \bibliographystyle{IEEEtran}
-\bibliography{references}
+\bibliography{content/references}
 
 \end{document}
