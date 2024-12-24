@@ -1,0 +1,44 @@
+\documentclass[conference]{IEEEtran}
+
+% Add necessary packages
+\usepackage{graphicx} % For figures
+\usepackage{amsmath}  % For mathematical formulas
+\usepackage{cite}     % For references
+\usepackage{footnote} % For footnotes
+
+% Set up title, authors, and affiliation
+\title{Your Paper Title Here}
+\author{
+    \IEEEauthorblockN{Author Name}
+    \IEEEauthorblockA{Affiliation\\
+    Email: email@example.com}
+    \and
+    \IEEEauthorblockN{Second Author Name}
+    \IEEEauthorblockA{Affiliation\\
+    Email: email2@example.com}
+}
+
+\begin{document}
+
+% Abstract Section
+\maketitle
+\begin{abstract}
+    Your abstract text goes here. It should be 100-150 words and summarize the paper's content.
+\end{abstract}
+
+\begin{IEEEkeywords}
+    Keyword1, Keyword2, Keyword3, Keyword4, Keyword5
+\end{IEEEkeywords}
+
+% Include sections from separate files
+\input{introduction}
+\input{related_work}
+\input{methodology}
+\input{experiments_results}
+\input{conclusion}
+
+% References Section
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
