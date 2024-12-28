@@ -26,9 +26,9 @@
 % Abstract Section
 \maketitle
 \begin{abstract}
-    The advancement of robotic arm systems has increasingly relied on object detection algorithms for efficient pick-and-place tasks. While 3D object detection models such as YOLOv8 have demonstrated high performance in these scenarios, their application is limited in low-cost robotic systems due to hardware constraints.
-    To address these limitations, this project develops an integrated framework that combines 2D object detection with monocular depth estimation, enabling robust object localization and depth analysis using cost-effective hardware.
-    The proposed system utilizes YOLOv8 for precise 2D object identification and classification. Simultaneously, depth estimation is achieved through a monocular camera setup, offering a streamlined approach to determining object distances without the need for expensive stereo or LiDAR systems.
+    Computer vision techniques, such as monocular distance estimation combined with object detection algorithms like YOLOv8, have emerged as powerful tools for robotic arm pick-and-place tasks. Monocular distance estimation provides a cost-effective solution for spatial localization by leveraging a single camera, making it ideal for low-cost robotic systems. YOLOv8, with its real-time detection capabilities and robust performance, enables precise identification and localization of objects in cluttered environments.
+
+However, integrating these techniques into low-cost robotic systems poses unique challenges due to computational constraints and hardware limitations. This paper focuses on the application of monocular distance estimation and YOLOv8 in guiding robotic arms for pick-and-place operations. While the core emphasis is on optimizing the vision pipeline, we briefly address the importance of tailoring inverse kinematics models to the robotic arm's design to achieve smooth joint motions. The proposed approach demonstrates how accessible computer vision technologies can enhance automation capabilities in low-cost robotics, paving the way for more versatile and efficient robotic systems.
 \end{abstract}
 
 \vspace{0.5cm}
