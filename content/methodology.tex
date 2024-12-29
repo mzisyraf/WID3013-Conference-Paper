@@ -1,8 +1,4 @@
 \section{Methodology}
 
-In this section, describe the approach or methodology you used in your research. Explain any algorithms, models, or techniques you implemented. If applicable, provide any theoretical background necessary to understand your methodology.
-
-Be sure to explain any datasets, experiments, or simulations you conducted, including how the data was collected and preprocessed.
-
-% Example:
-% We propose a hybrid approach combining convolutional neural networks (CNNs) with a recurrent neural network (RNN) for time-series image prediction. The model is trained on the XYZ dataset, which consists of...
+The methodology for the 2D object detection and monocular depth estimation system leverages the integration of YOLOv8 for object detection, a robotic arm for manipulation, and monocular depth estimation using a pinhole camera model. The approach is designed to detect an object from a monocular camera feed, estimate its depth, and position a robotic arm to interact with the object. The main components of the system are described below.
+Throughout the system, safety protocols are incorporated to ensure safe interaction with objects and the environment. The system’s joint angles are clamped to a safe range to avoid damaging the robotic arm. Additionally, the camera calibration and depth estimation parameters are periodically validated to maintain system accuracy.
