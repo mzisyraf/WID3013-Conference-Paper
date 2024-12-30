@@ -1,11 +1,9 @@
 \section{Methodology}
 
-\section{Methodology}
-
 The methodology for the 2D object detection and monocular depth estimation system leverages the integration of YOLOv8 for object detection, a robotic arm for manipulation, and monocular depth estimation using a pinhole camera model. The approach is designed to detect an object from a monocular camera feed, estimate its depth, and position a robotic arm to interact with the object. The main components of the system are described below.
 
 \subsection{ROS Setup and YOLOv8 Model Integration}
-The system is developed within the Robot Operating System (ROS) framework, which handles the communication between the various system components, including the camera, object detection model, and robotic arm. A ROS node is initialized to facilitate the interaction between the software modules. The YOLOv8 Nano model is used for object detection, where a fine-tuned model file is loaded for real-time object detection. YOLOv8, known for its efficiency and accuracy in detecting objects in images, is employed due to its ability to process high-resolution images with low computational cost, making it suitable for robotic vision tasks \cite{redmon2016you}.
+The system is developed within the Robot Operating System (ROS) framework, which handles the communication between the various system components, including the camera, object detection model, and robotic arm. A ROS node is initialized to facilitate the interaction between the software modules. The YOLOv8 Nano model is used for object detection, where a fine-tuned model file is loaded for real-time object detection. YOLOv8, known for its efficiency and accuracy in detecting objects in images, is employed due to its ability to process high-resolution images with low computational cost, making it suitable for robotic vision tasks \cite{redmon2016yolo9000betterfasterstronger}.
 
 \subsection{ROS Subscriptions and Publications}
 The system subscribes to the \texttt{/camera/color/image\_raw} topic for real-time image input from the camera, which captures RGB images of the environment. The object detection module processes these images to identify objects. The system also publishes joint commands to the robotic arm through the \texttt{/armX\_joint/command} topics, which are used to move the arm joints and control the gripper for object manipulation.
@@ -23,10 +21,10 @@ The YOLOv8 model detects objects in the camera feed by processing the raw image 
 To estimate the object’s distance from the camera, the system applies the pinhole camera model, which uses the object’s size in pixels to calculate its real-world distance. The formula for distance estimation relies on the known width of the object and the focal length of the camera:
 
 \begin{equation}
-D = \frac{W_f}{W_p},
+    D = \frac{W_f}{W_p},
 \end{equation}
 
-where $D$ is the distance to the object, $W_f$ is the real-world object width, and $W_p$ is the object’s width in pixels. This distance estimation approach is commonly used in monocular depth estimation tasks \cite{godard2017unsupervised}.
+where $D$ is the distance to the object, $W_f$ is the real-world object width, and $W_p$ is the object’s width in pixels. This distance estimation approach is commonly used in monocular depth estimation tasks \cite{godard2017unsupervisedmonoculardepthestimation}.
 
 \subsection{Coordinate Transformation}
 Once the object is detected, the system transforms the 2D image coordinates into the 3D robot workspace coordinates. The camera's offset and tilt angle are taken into account to adjust for any misalignment between the camera and the robot’s base frame. The horizontal and vertical offsets are calculated based on the camera's intrinsic parameters and the object’s position in the image. These adjustments are necessary to align the detected object’s position with the robot's coordinate system.
@@ -34,7 +32,7 @@ Once the object is detected, the system transforms the 2D image coordinates into
 The horizontal offset, $\Delta x$, is given by:
 
 \begin{equation}
-\Delta x = (x_{\text{obj}} - x_{\text{center}}) \cdot k,
+    \Delta x = (x_{\text{obj}} - x_{\text{center}}) \cdot k,
 \end{equation}
 
 where $x_{\text{obj}}$ is the object’s horizontal position in the image, $x_{\text{center}}$ is the image’s center, and $k$ is a scale factor derived from the camera’s parameters.
@@ -43,7 +41,7 @@ where $x_{\text{obj}}$ is the object’s horizontal position in the image, $x_{\
 To move the robotic arm to the object, the system calculates the required joint angles based on the object’s position and the robot’s arm kinematics. Using the law of cosines, the system computes the angles needed to position the gripper at the object’s location in 3D space:
 
 \begin{equation}
-\theta = \cos^{-1}\left( \frac{m^2 + n^2 - d^2}{2mn} \right),
+    \theta = \cos^{-1}\left( \frac{m^2 + n^2 - d^2}{2mn} \right),
 \end{equation}
 
 where $m$ and $n$ represent the transformed coordinates of the object, and $d$ is the distance to the object. These calculations allow the robotic arm to adjust its joints and position the gripper accurately at the object's center.
