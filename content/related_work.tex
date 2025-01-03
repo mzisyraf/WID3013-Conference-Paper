@@ -1,5 +1,5 @@
 \section{Related Work}
-In robotic systems, object detection and depth estimation are critical as they enable robotic arms to perform pick and place tasks. Accurate perception of the object’s location and its distance are essential for efficient and precise manipulation. Recent studies have focused on integrating these two tasks to streamline robotic workflows and improve operational accuracy. 
+In robotic systems, object detection and depth estimation are critical as they enable robotic arms to perform pick and place tasks. Accurate perception of the object’s location and its distance are essential for efficient and precise manipulation. Recent studies have focused on integrating these two tasks to streamline robotic workflows and improve operational accuracy.
 Below, we explore key approaches in these domains, emphasizing their strengths, weaknesses and relevance to our work.
 
 \vspace{10pt}
@@ -12,15 +12,15 @@ Monocular depth estimation refers to the task of estimating the depth of each pi
 
 \vspace{10pt}
 
-Li et al. \cite{huiyi_li__2024} has proposed one approach that integrates a convolutional neural network with dilated convolutions and feature fusion to monocular depth estimation. The model’s DNET backbone was able to extract features from 2D images by integrating semantic information from multiple receptive fields and levels. Based on their validation on NYU Depth-v2 and KITTI datasets, this proposed method performed significantly better than other existing algorithms.
+Li et al. \cite{huiyi_li_2024} has proposed one approach that integrates a convolutional neural network with dilated convolutions and feature fusion to monocular depth estimation. The model’s DNET backbone was able to extract features from 2D images by integrating semantic information from multiple receptive fields and levels. Based on their validation on NYU Depth-v2 and KITTI datasets, this proposed method performed significantly better than other existing algorithms.
 
 \vspace{10pt}
 
-Another approach to monocular depth estimation by Zhang and Yu \cite{rui_zhang__2024} proposed the OE-Depth, which is a self-supervised algorithm that utilizes multi-dimensional dynamic convolution. The authors integrated a triplet loss term and employed metric learning techniques to optimize the depth estimation accuracy on object edges. This algorithm scored 0.908 in accuracy when validated on the KITTI dataset.
+Another approach to monocular depth estimation by Zhang and Yu \cite{rui_zhang_2024} proposed the OE-Depth, which is a self-supervised algorithm that utilizes multi-dimensional dynamic convolution. The authors integrated a triplet loss term and employed metric learning techniques to optimize the depth estimation accuracy on object edges. This algorithm scored 0.908 in accuracy when validated on the KITTI dataset.
 
 \vspace{10pt}
 
-While monocular depth estimation is more cost-effective, it often underperforms when compared to LiDAR-based implementation which utilizes both RGB image and sparse depth data. To address this, the researcher Shao et al. \cite{shuwei_shao__2024} introduced a pseudo-LiDAR approach to assist monocular depth estimation by simulating the LiDAR’s scanning pattern using camera data. The system employed geometric sampling to measure the azimuths of 3D scene points and established geometric correlations mimicking that of LiDAR scanning. These pseudo-LiDAR rays are then reviewed using appearance sampling to identify the ones that provide reliable depth information. This approach has been tested on KITTI, NYU-Depth-v2, and SUN RGB-D dataset, which outperforms other state-of-the-art techniques.
+While monocular depth estimation is more cost-effective, it often underperforms when compared to LiDAR-based implementation which utilizes both RGB image and sparse depth data. To address this, the researcher Shao et al. \cite{shuwei_shao_2024} introduced a pseudo-LiDAR approach to assist monocular depth estimation by simulating the LiDAR’s scanning pattern using camera data. The system employed geometric sampling to measure the azimuths of 3D scene points and established geometric correlations mimicking that of LiDAR scanning. These pseudo-LiDAR rays are then reviewed using appearance sampling to identify the ones that provide reliable depth information. This approach has been tested on KITTI, NYU-Depth-v2, and SUN RGB-D dataset, which outperforms other state-of-the-art techniques.
 
 \vspace{10pt}
 
