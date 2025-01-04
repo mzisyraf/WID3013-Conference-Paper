@@ -1,0 +1,43 @@
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-04, Refactor LaTeX documents: reduce vertical spacing in abstract and related work sections for improved layout consistency.
+Tareq0267, u2001228@siswa.um.edu.my, 2025-01-04, Merge branch 'main' of https://github.com/mzisyraf/WID3013-Conference-Paper
+Tareq0267, u2001228@siswa.um.edu.my, 2025-01-04, Revise introduction section
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-04, Refactor LaTeX documents: adjust table placement in experiment results and streamline introduction section for clarity; improve abstract wording for better flow.
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2025-01-04, Update README.md
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-04, Refactor LaTeX documents: standardize spacing, improve figure placements, and enhance table formatting for clarity in related work and experiment results sections.
+ammarhazlan, 92830062+ammarhazlan@users.noreply.github.com, 2025-01-03, Update related_work.tex
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-03, update references formatting and add spacing in LaTeX document.
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-03, Refactor introduction and abstract sections for clarity; adjust figure sizes and table formatting in experiment results for improved presentation.
+Tareq0267, u2001228@siswa.um.edu.my, 2025-01-03, Enhance experiment results section with detailed evaluations of YOLOv8 model and monocular distance estimation, including metrics, comparisons, and visual aids.
+CheWanArRayyan, 93040979+CheWanArRayyan@users.noreply.github.com, 2025-01-03, Update conclusion.tex
+CheWanArRayyan, 93040979+CheWanArRayyan@users.noreply.github.com, 2025-01-03, Update references.bib
+CheWanArRayyan, 93040979+CheWanArRayyan@users.noreply.github.com, 2025-01-03, Update related_work.tex
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-02, Refine limitations section
+ammarhazlan, 92830062+ammarhazlan@users.noreply.github.com, 2025-01-02, Update related_work.tex
+ammarhazlan, 92830062+ammarhazlan@users.noreply.github.com, 2025-01-02, Update references.bib
+ammarhazlan, 92830062+ammarhazlan@users.noreply.github.com, 2024-12-31, Update limitations.tex
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-30, Fix author name in paper.tex
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-30, Fix formatting issues in introduction and methodology sections; update references for consistency
+abrario, abrar22052002@gmail.com, 2024-12-30, Methodology_updated_abrar
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-29, Updated template
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-29, Update references
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-29, Merge branch 'main' of https://github.com/mzisyraf/WID3013-Conference-Paper
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-29, Add .gitignore for build artifacts and update methodology section
+Tareq Adam, 92675883+Tareq0267@users.noreply.github.com, 2024-12-29, Update paper.tex
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.synctex.gz
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.pdf
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.log
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.fls
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.fdb_latexmk
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.blg
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.bbl
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Delete paper.aux
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-25, Updated index terms
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-25, Added draft abstract
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-25, Update paper.tex
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-24, Merge branch 'main' of https://github.com/mzisyraf/WID3013-Conference-Paper
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-24, template update
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-24, Update README.md
+Muhammad Zahirul Isyraf Bin Mohamed Aidi Shahriz, 85271020+mzisyraf@users.noreply.github.com, 2024-12-24, Create README.md
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-24, template update
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-24, template update
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2024-12-24, Conference paper template
