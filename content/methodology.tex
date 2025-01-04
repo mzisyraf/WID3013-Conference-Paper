@@ -9,7 +9,7 @@ The system is developed within the Robot Operating System (ROS) framework, which
 The system subscribes to the \texttt{/camera/color/image\_raw} topic for real-time image input from the camera, which captures RGB images of the environment. The object detection module processes these images to identify objects. The system also publishes joint commands to the robotic arm through the \texttt{/armX\_joint/command} topics, which are used to move the arm joints and control the gripper for object manipulation.
 
 \subsection{Camera and Arm Parameters}
-A set of known parameters is defined to relate the camera's measurements to the robot’s workspace where the camera’s intrinsic parameters, including focal length and camera height, are defined for the depth estimation process. The arm parameters, such as segment lengths and tilt angles, are used to transform the camera measurements into the robot's coordinate system. These parameters are crucial for precise arm movement and ensuring the correct positioning of the gripper to the detected object.
+A set of known parameters is defined to relate the camera's measurements to the robot’s workspace where the camera’s intrinsic parameters, including focal length and camera height, are defined for the depth estimation process. The arm parameters, such as segment lengths and tilt angles, are used to transform the camera measurements into the robot's coordinate system. 
 
 \subsection{Initial Positioning of the Robotic Arm}
 Before the object detection and manipulation process, the robotic arm and gripper are moved to a \textit{ready} position which ensures that the arm begins each task from a consistent and safe starting point. The arm is set to a default position using joint commands, which minimizes the risk of collisions and ensures smoother task execution.
@@ -18,7 +18,7 @@ Before the object detection and manipulation process, the robotic arm and grippe
 The YOLOv8 model detects objects in the camera feed by processing the raw image frames. When an object of interest is detected, the model outputs the bounding box dimensions, which represent the position and size of the object in the image frame. YOLOv8’s real-time detection capabilities make it well-suited for dynamic environments where object positions may change rapidly.
 
 \subsection{Distance Estimation}
-To estimate the object’s distance from the camera, the system applies the pinhole camera model, which uses the object’s size in pixels to calculate its real-world distance.In practice, the system must also account for factors like lens distortion, object orientation, and the camera’s field of view to improve distance estimation accuracy. The formula for distance estimation relies on the known width of the object and the focal length of the camera:
+To estimate the object’s distance from the camera, the system applies the pinhole camera model, which uses the object’s size in pixels to calculate its real-world distance. The formula for distance estimation relies on the known width of the object and the focal length of the camera:
 
 \begin{equation}
     D = \frac{W_f}{W_p},
