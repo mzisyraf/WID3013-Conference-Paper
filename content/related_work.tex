@@ -11,15 +11,15 @@ For the robotic arm to be able to identify and localize objects within a scene, 
 
 Early methods relied on handcrafted features like SIFT, HOG, or SURF, coupled with classifiers such as SVMs or decision trees. These methods are very effective in controlled environments, however, they lack robustness in complex settings which are often encountered in industrial and service robotics.
 
-\vspace{10}
+\vspace{10pt}
 
 In this epoch, object detection can be classified in two categories, one-stage or two-stage detectors. One-stage detectors, such as YOLO (You Only Look Once) \cite{redmon2018yolov3:anincrementalimprovement} and SSD (Single Shot MultiBox Detector) \cite{liu2016ssd:singleshotmultiboxdetector}, are popularly adopted for robotic tasks due to their high inference speed. They are able to do direct prediction of bounding boxes and class labels thanks to their anchor-based and anchor-free mechanisms. These features make them suitable for real-time applications where speed is very important. However, these models sometimes sacrifice detection accuracy, particularly for small or overlapping objects.
 
-\vspace{10}
+\vspace{10pt}
 
 Two-stage detectors, such as Faster R-CNN \cite{ren2016fasterr-cnn}, provide higher detection accuracy by separating the region proposal phase from classification phase. This layered approach makes them well-suited for tasks requiring precision, such as handling fragile or high-value items. However, their usage in real-time robotic systems are often limited by the high computational cost.
 
-\vspace{10}
+\vspace{10pt}
 
 Despite significant advancements many object detection models do not account for spatial depth, which is critical for accurately positioning the robotic arm. This limitation motivates the need to combine object detection with depth estimation for complete spatial understanding in pick-and-place tasks.
 
