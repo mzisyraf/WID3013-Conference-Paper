@@ -1,5 +1,15 @@
 \section{Introduction}
 
-In this section, you will introduce the topic of your paper, providing background information on the problem you're addressing. You should also state the primary objectives of your research and the significance of your work.
+In the field of robotics, vision-based object detection and distance estimation play a crucial role, particularly in pick-and-place tasks. However, many 3D vision systems are expensive and overly complex, which makes them less practical for more budget-conscious projects. This paper explores a cost-effective alternative by combining monocular distance estimation with YOLOv8 object detection to enable efficient robotic manipulation.
 
-Briefly describe the structure of the paper, outlining the contents of each section. The introduction should capture the reader's attention and explain why the research is important.
+Monocular distance estimation, relying on a single camera and the pinhole model, coupled with YOLOv8’s real-time object detection capabilities, presents a lightweight yet accurate solution. This integration allows for precise object localisation and robotic arm movements through inverse kinematics, making it ideal for applications like logistics, retail automation, and even simple home robotics.
+
+Our aim is to showcase the practicality of developing robust, affordable vision systems that cater to real-world constraints. The paper is organised as follows:
+\begin{itemize}
+    \item \textbf{Section 2} dives into the methodology, explaining the roles of YOLOv8, monocular estimation, and ROS integration.
+    \item \textbf{Section 3} outlines the experimental setup, including system calibration and environment design.
+    \item \textbf{Section 4} evaluates results, discussing detection accuracy and the robot's manipulation performance.
+    \item \textbf{Section 5} concludes with key findings, challenges, and suggestions for future improvement.
+\end{itemize}
+
+By merging advanced algorithms with minimal hardware requirements, this work underlines the potential of making robotic solutions more accessible.
