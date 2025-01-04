@@ -2,42 +2,36 @@
 In robotic systems, object detection and depth estimation are critical as they enable robotic arms to perform pick and place tasks. Accurate perception of the object’s location and its distance are essential for efficient and precise manipulation. Recent studies have focused on integrating these two tasks to streamline robotic workflows and improve operational accuracy.
 Below, we explore key approaches in these domains, emphasizing their strengths, weaknesses and relevance to our work.
 
-\vspace{10pt}
 
 \subsection{Object Detection}
 For the robotic arm to be able to identify and localize objects within a scene, Object Detection must be a vital component. Traditionally, researchers use classical computer vision to do object detection but over time, the object detection methods have evolved to advanced deep learning-based models.
 
-\vspace{10pt}
 
 Early methods relied on handcrafted features like SIFT, HOG, or SURF, coupled with classifiers such as SVMs or decision trees. These methods are very effective in controlled environments, however, they lack robustness in complex settings which are often encountered in industrial and service robotics.
 
-\vspace{10pt}
 
 In this epoch, object detection can be classified in two categories, one-stage or two-stage detectors. One-stage detectors, such as YOLO (You Only Look Once) \cite{redmon2018yolov3:anincrementalimprovement} and SSD (Single Shot MultiBox Detector) \cite{liu2016ssd:singleshotmultiboxdetector}, are popularly adopted for robotic tasks due to their high inference speed. They are able to do direct prediction of bounding boxes and class labels thanks to their anchor-based and anchor-free mechanisms. These features make them suitable for real-time applications where speed is very important. However, these models sometimes sacrifice detection accuracy, particularly for small or overlapping objects.
 
-\vspace{10pt}
 
 Two-stage detectors, such as Faster R-CNN \cite{ren2016fasterr-cnn}, provide higher detection accuracy by separating the region proposal phase from classification phase. This layered approach makes them well-suited for tasks requiring precision, such as handling fragile or high-value items. However, their usage in real-time robotic systems are often limited by the high computational cost.
 
-\vspace{10pt}
 
 Despite significant advancements many object detection models do not account for spatial depth, which is critical for accurately positioning the robotic arm. This limitation motivates the need to combine object detection with depth estimation for complete spatial understanding in pick-and-place tasks.
 
 \subsection{Monocular Depth Estimation}
 Monocular depth estimation refers to the task of estimating the depth of each pixel inside a 2D image relative to the camera. This approach has been widely used in various fields including robotics due to its easy implementation and cost-effectiveness.
 
-\vspace{10pt}
 
 Li et al. \cite{huiyi_li_2024} has proposed one approach that integrates a convolutional neural network with dilated convolutions and feature fusion to monocular depth estimation. The model’s DNET backbone was able to extract features from 2D images by integrating semantic information from multiple receptive fields and levels. Based on their validation on NYU Depth-v2 and KITTI datasets, this proposed method performed significantly better than other existing algorithms.
 
-\vspace{10pt}
+
 
 Another approach to monocular depth estimation by Zhang and Yu \cite{rui_zhang_2024} proposed the OE-Depth, which is a self-supervised algorithm that utilizes multi-dimensional dynamic convolution. The authors integrated a triplet loss term and employed metric learning techniques to optimize the depth estimation accuracy on object edges. This algorithm scored 0.908 in accuracy when validated on the KITTI dataset.
 
-\vspace{10pt}
+
 
 While monocular depth estimation is more cost-effective, it often underperforms when compared to LiDAR-based implementation which utilizes both RGB image and sparse depth data. To address this, the researcher Shao et al. \cite{shuwei_shao_2024} introduced a pseudo-LiDAR approach to assist monocular depth estimation by simulating the LiDAR’s scanning pattern using camera data. The system employed geometric sampling to measure the azimuths of 3D scene points and established geometric correlations mimicking that of LiDAR scanning. These pseudo-LiDAR rays are then reviewed using appearance sampling to identify the ones that provide reliable depth information. This approach has been tested on KITTI, NYU-Depth-v2, and SUN RGB-D dataset, which outperforms other state-of-the-art techniques.
 
-\vspace{10pt}
+
 
 These previous published works have shown various approaches to monocular depth estimation. Building on these works, our research aimed to combine both object detection and monocular depth estimation in a low-cost robotic arm system that can handle pick and place tasks, specifically a cup.
