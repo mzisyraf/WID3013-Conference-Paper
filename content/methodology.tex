@@ -18,7 +18,7 @@ Before the object detection and manipulation process, the robotic arm and grippe
 The YOLOv8 model detects objects in the camera feed by processing the raw image frames. When an object of interest is detected, the model outputs the bounding box dimensions, which represent the position and size of the object in the image frame. YOLOv8’s real-time detection capabilities make it well-suited for dynamic environments where object positions may change rapidly.
 
 \subsection{Distance Estimation}
-To estimate the object’s distance from the camera, the system applies the pinhole camera model, which uses the object’s size in pixels to calculate its real-world distance. The formula for distance estimation relies on the known width of the object and the focal length of the camera:
+To estimate the object’s distance from the camera, the system applies the pinhole camera model, which uses the object’s size in pixels to calculate its real-world distance.In practice, the system must also account for factors like lens distortion, object orientation, and the camera’s field of view to improve distance estimation accuracy. The formula for distance estimation relies on the known width of the object and the focal length of the camera:
 
 \begin{equation}
     D = \frac{W_f}{W_p},
