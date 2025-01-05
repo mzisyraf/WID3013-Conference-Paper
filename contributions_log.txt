@@ -1,3 +1,7 @@
+abrario, abrar22052002@gmail.com, 2025-01-04, methodology finalized
+abrario, abrar22052002@gmail.com, 2025-01-04, parameter updates module
+abrario, abrar22052002@gmail.com, 2025-01-04, estimate module update
+Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-04, Add contributions log to track authorship and changes in LaTeX documents
 Muhammad Zahirul Isyraf, mzisyraf@gmail.com, 2025-01-04, Refactor LaTeX documents: reduce vertical spacing in abstract and related work sections for improved layout consistency.
 Tareq0267, u2001228@siswa.um.edu.my, 2025-01-04, Merge branch 'main' of https://github.com/mzisyraf/WID3013-Conference-Paper
 Tareq0267, u2001228@siswa.um.edu.my, 2025-01-04, Revise introduction section
